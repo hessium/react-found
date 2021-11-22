@@ -1,0 +1,96 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+  margin: 10px 0;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__btns {
+  display: flex;
+  justify-content: center
+}
+
+.post-enter {
+  transform: translateX(-350px);  
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  margin-right: 4px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.page:last-child {
+  margin-right: 0;
+}
+
+.page__current {
+  border: 1px solid red;
+}
+
+.navbar {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  padding: 5px;
+}
+
+.navbar__links {
+  margin-top: 5px;
+}
+.navbar__link {
+  margin-right: 5px;
+  
+}
+
+.navbar__link:last-child {
+  margin-right: 0;
+}
+
+.comments {
+  margin-top: 15px;
+}
